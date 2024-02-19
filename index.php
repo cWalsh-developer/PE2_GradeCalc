@@ -1,4 +1,5 @@
 <html> 
+    <!doctype html>
     <body> 
         <p>
             Testing blahblahblah
