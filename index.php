@@ -1,8 +1,6 @@
+<!doctype html>
 <html> 
-    <!doctype html>
     <body> 
-        <p>
-            Testing blahblahblahwefwe
-        </p>
+        <p> This page will be the log-in page. </p> //testing comment
     </body>
 </html>
