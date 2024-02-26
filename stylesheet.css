@@ -1,0 +1,49 @@
+.regContainerMain{
+    width: 25%;
+    box-shadow: 10px 10px 10px 2px black;
+    background: white;
+    margin: auto;
+    margin-top: 10%;
+    height: 450px;
+    align-items: center;
+    position: relative;
+    font-size: large;
+  }
+  body 
+  {
+    background-color: white
+  }
+  .Title
+  {
+    background-color: #25238e;
+    color: white;
+    height: 25px;
+    padding:10px;
+    text-align: center;
+  }
+ .registrationForm
+ {
+    width: max-content;
+    margin: 0 auto;
+    padding: 35px 0;
+ }
+
+ #submit
+ {
+    margin: 0 20%;
+    color: white;
+    background-color: #25238e;
+    padding: 5px 20px;
+
+ }
+ form :focus
+ {
+    outline: none !important;
+    border: solid 2.5px #25238e;  
+    padding: 5px;
+ }
+
+ input
+ {
+    font-size:large;
+ }
