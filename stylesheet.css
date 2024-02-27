@@ -48,3 +48,24 @@
  {
     font-size:large;
  }
+
+ /* login sheet style */
+
+ .logContainerMain{
+   width: 25%;
+   box-shadow: 10px 10px 10px 2px black;
+   background: white;
+   margin: auto;
+   margin-top: 10%;
+   height: 450px;
+   position: relative;
+   font-size: large;
+   border: solid 3px black;
+ }
+
+ .loginForm
+ {
+    width: max-content;
+    margin: 0 auto;
+    padding: 35px 0;
+ }
