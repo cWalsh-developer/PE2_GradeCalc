@@ -1,54 +1,58 @@
 body 
 {
   background-color: grey;
+  margin: 0px;
+  padding: 0;
 }
  
 /* home style */
 
-#loginButton{
-   width: 120px;
-   background: white;
-   margin: auto;
-   margin-top: 40px;
-   height: 50px;
-   border: solid 3px black;
-   background-color: #25238e;
+#visionStatement{
+   margin: 20px;
    text-align: center;
-  
+   color: white;
+   font-size: 30px;
 }
 
-#loginText{
-   font-size: 40px;
+#text{
+   font-size: 30px;
    text-decoration: none;
    color: white;
    text-align: center;
+   display: inline-block;
+   margin-bottom: 50px;
 }
 
-#registerButton{
-   width: 150px;
-   background: white;
-   margin: auto;
-   margin-top: 40px;
-   height: 50px;
-   border: solid 3px black;
-   background-color: #25238e;
+#textSection {
    text-align: center;
 }
 
-#registerText{
-   font-size: 40px;
+#button{
+   font-size: 30px;
    text-decoration: none;
    color: white;
    text-align: center;
+   border: 2px solid black;
+   display: inline-block;
+   background-color: black;
+   margin-bottom: 50px;
 }
 
-#buttonsContainer{
-   margin: auto;
-   width: 300px;
-   height: 250px;
-   box-shadow: 10px 10px 10px 2px black;
-   border: solid 3px black;
-   background-color: white;
+#buttonSection {
+   text-align: center;
+}
+
+#more{
+   font-size: 30px;
+   text-decoration: none;
+   color: white;
+   text-align: center;
+   border: 2px solid black;
+   display: inline-block;
+   background-color: black;
+}
+
+#moreSection {
    text-align: center;
 }
 
@@ -59,6 +63,7 @@ body
 }
 
 #logoSection{
+   margin-top: 50px;
    text-align: center;
 }
 
