@@ -239,7 +239,6 @@ body
    justify-content: space-between;
    align-items: center;
    padding: 10px;
-   border: 2px solid black;
    margin-bottom: 50px;
    
 }
@@ -381,4 +380,40 @@ body
 
 .bottomText{
    margin: 20px;
+}
+
+
+ /* Student View */
+
+ #listSection{
+   
+   display: flex;
+   text-align: center;
+   justify-content: space-between;
+   
+   
+ }
+
+#studentListDiv{
+   width: 300px;
+   background-color: #3b3b3b90;
+   color: white;
+   margin-left: 400px;
+   border-radius: 40px;
+}
+
+#studentsListTitleText{
+   font-size: 30px;
+}
+
+#moduleListDiv{
+   width: 400px;
+   color: white;
+   background-color: #3b3b3b90;
+   margin-right: 250px;
+   border-radius: 40px;
+}
+
+#moduleListTiteText{
+   font-size: 30px;
 }
