@@ -6,9 +6,19 @@
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     </head>
     <body>
+        <div class = "top">
+            <div class = "logo">
+                <img src="css/cbrrand_logo.png" id="logoId">  </img>
+            </div>
+            <div class = "submit">
+                <form method = "post" action = "">
+                    <input type = "submit" id = "signUp" value = "Sign Up" name = "signUp">
+                </form>
+            </div>
+        </div>
         <div class="logContainerMain">
             <div class="logContainerTitle">
-              <h3 class="Title">Log In</h3>
+              <h3 id = "title">Log In</h3>
             </div>
 
             <div class = "loginForm">
@@ -17,10 +27,8 @@
                     <input type = "text" id = "username" name = "username"><br><br>
                     <label for = "password"> Password</label><br>
                     <input type = "text" id = "password" name = "password"><br><br>
-                    <input type = "radio" name = "teacher"> Teacher
-                    <input type = "radio" name = "student"> Student<br><br>
-                    <input type = "submit" id = "submit" value = "Log In" name = "login"><br><br>
-                    <input type = "submit" id = "submit" value = "Forgot Password" name = "forgotPass"><br><br>
+                    <input type = "submit" id = "login" value = "Log In" name = "login"><br><br>
+                    <input type = "submit" id = "forgotPass" value = "Forgot your password?" name = "forgotPass"><br><br>
                 </form>
             </div>
         </div>
