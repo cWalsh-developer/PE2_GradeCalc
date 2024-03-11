@@ -11,25 +11,34 @@
                 <img src="css/cbrrand_logo.png" id="logoCbr">  </img>
             </div>
             <div class = "submit">
-                <form method = "post" action = "register_view.html">
+               <!-- <form>  Temporarily stopped form and added anchor link to get the log in working -->
+                    <a href="register_view.html">
                     <input type = "submit" id = "signUp" value = "Sign Up" name = "signUp">
-                </form>
+                    </a>
+                <!-- </form>  -->
             </div>
         </div>
         <div class="logContainerMain">
-            <div class="logContainerTitle">
+            <div id="logContainerTitle">
               <h3 id = "title">Log In</h3>
             </div>
 
             <div class = "loginForm">
-                <form method = "post" action = "student_view.html">
+
+           <!-- <form>  Temporarily stopped form and added anchor link to get the log in working -->
                     <label for = "username"><img src="css/student img.png" id="userImg"></img></label>
                     <input type = "text" id = "username" name = "username"><br><br>
                     <label for = "password"><img src="css/passwordIcon.png" id="passImg"></img></label>
                     <input type = "password" id = "password" name = "password"><br><br><br><br>
+
+                    <a href="student_view.html">
                     <input type = "submit" id = "login" value = "Log In" name = "login"><br>
+                    </a>
+
                     <input type = "submit" id = "forgotPass" value = "Forgot your password?" name = "forgotPass"><br><br>
-                </form>
+
+           <!-- </form>--> 
+
             </div>
         </div>
     </body>
