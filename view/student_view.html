@@ -23,7 +23,7 @@
             </a>
         </section>  
 
-        <form action="">
+        <!--<form action="">-->
             <section id="gradeCalculator">
                 <p id="chooseYourCourse"> Choose your course </p>
                 <div class="moduleClasses">
@@ -70,10 +70,6 @@
                         <input class="quizInput" id = quizInputL5M4 type="text">
                         <input class="courseworkInput" id = courseworkInputL5M4 type="text">
                     </div>
-                </div>
-
-                <div id="calculateDiv">
-                    <button class="calculateButton"> Calculate </button>
                 </div>
 
                 <div id = "displayResult">
@@ -128,12 +124,14 @@
 
 
                 <div id="calculateDiv">
-                    <button class="calculateButton"> Calculate </button>
+                    <button class="calculateButton" id = "calculate"> Calculate </button>
                 </div>
 
                 <div id = "displayResult">
-                    <p id = "result">test</p>
+                    <p id = "result6">test</p>
                 </div>
+                <script src="../controller/JavaScript/PE2_calcLogic.js"></script>
+                <script>document.getElementById("calculate").onclick = calculateGrades;</script>
             </section>
             
             <section id="bottomSection">
@@ -143,6 +141,6 @@
                 <p class="bottomText"><input type="radio" name="class_type" value="lower_second_class"> Lower Second class</p>
                 <p class="bottomText"><input type="radio" name="class_type" value="pass"> Pass</p>                
             </section>
-        </form>
+        <!--</form>-->
     </body>
 </html>
