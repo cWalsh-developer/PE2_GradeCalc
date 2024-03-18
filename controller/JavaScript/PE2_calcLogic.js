@@ -1,12 +1,14 @@
 //logic for the calculator
+var markL5;
+var finalL5;
+var markL6;
+var finalL6;
+
 
 function calculateGrades()
 {
 
   //here starts the calculation for level 5/////////////////////////////////////////////////////////////////////////
-
-  var markL5;
-  var finalL5;
 
   var testMarkL5M1 = document.getElementById("testInputL5M1").value;
   var quizMarkL5M1 = document.getElementById("quizInputL5M1").value;
@@ -50,9 +52,6 @@ function calculateGrades()
   document.getElementById("result5").innerHTML = finalL5.toFixed(2); //insert the id to replace here, to fixed rounds to 2 d.p
 
   //here starts the calculation for level 6/////////////////////////////////////////////////////////////////////////
-
-  var markL6;
-  var finalL6;
 
   var testMarkL6M1 = document.getElementById("testInputL6M1").value;
   var quizMarkL6M1 = document.getElementById("quizInputL6M1").value;
@@ -102,6 +101,24 @@ function calculateGrades()
   document.getElementById("result5").innerHTML = "Level 5 out of 20% = " + finalL5.toFixed(2) +"%";
   document.getElementById("result6").innerHTML = "Level 6 out of 80% = " + finalL6.toFixed(2) +"%";
   document.getElementById("displayResult").innerHTML = "You got " + finalAverage +"%";
-
-
 }
+
+function calculatePrediction()
+{
+    var firstClass = 70;
+    var secondUpper = 60;
+    var secondLower = 50;
+    var third = 45;
+    var pass = 40;
+
+    var totalAverage = finalL5.toFixed(2) + finalL6.toFixed(2);
+
+    var firstClassRad = document.getElementById("first_class");
+    var upperSecondClassRad = document.getElementById("upper_second_class");
+    var lowerSecondClassRad = document.getElementById("lower_second_class");
+    var thirdClassRad = document.getElementById("third_class");
+    var passRad = document.getElementById("pass");
+}
+
+
+
