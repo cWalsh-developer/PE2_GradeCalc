@@ -329,7 +329,7 @@ body
 #calculateDiv{
    display: flex;
    justify-content: center;
-   margin-bottom: 100px;
+   margin-bottom: 50px;
 }
 
 #gradeCalculator{
@@ -461,4 +461,12 @@ body
 
 #moduleListTiteText{
    font-size: 30px;
+}
+
+#resultSection{
+   text-align: center;
+   color: white;
+   margin-bottom: 100px;
+   font-size: 20px;
+
 }

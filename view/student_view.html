@@ -72,9 +72,7 @@
                     </div>
                 </div>
 
-                <div id = "displayResult">
-                    <p id = "result5">test</p>
-                </div>
+                
 
                 <div class="moduleClasses">
                     <p class="moduleLevel"> Level 6 </p>
@@ -127,11 +125,26 @@
                     <button class="calculateButton" id = "calculate"> Calculate </button>
                 </div>
 
-                <div id = "displayResult">
-                    <p id = "result6">test</p>
-                </div>
+                
                 <script src="../controller/JavaScript/PE2_calcLogic.js"></script>
                 <script>document.getElementById("calculate").onclick = calculateGrades;</script>
+
+                
+
+                <div id="resultSection">
+                    
+                    <p> Calculation Results: </p>
+
+                    <div>
+                        <p id="result5">Level 5 out of 20% = </p>
+                    </div>
+                    <div>
+                        <p id="result6">Level 6 out of 80% = </p>
+                    </div>
+                    <div>
+                        <p id="displayResult"></p>
+                    </div>
+                </div>
             </section>
             
             <section id="bottomSection">
