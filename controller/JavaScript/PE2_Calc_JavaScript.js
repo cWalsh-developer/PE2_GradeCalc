@@ -22,7 +22,7 @@ function validateRegistrationForm() {
     document.getElementById("emailInput").style.display = "block";
     document.getElementById("break2").style.display = "none";
   } 
-  else if (!emailText.includes("@") && !emailText.includes(".")) 
+  else if (!emailText.includes("@") || !emailText.includes(".")) 
   {
     document.getElementById("emailInputCheck").style.display = "block";
     document.getElementById("break2").style.display = "none";
