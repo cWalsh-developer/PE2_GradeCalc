@@ -11,10 +11,17 @@ body
 
 
 #visionStatement{
-   margin: 20px;
+   margin: 0 20px;
+   margin-bottom: 60px;
    text-align: center;
    color: white;
+   font-family: sans-serif;
    font-size: 30px;
+}
+
+#visionStatementText
+{
+   margin-top: 0;
 }
 
 #text{
@@ -31,11 +38,11 @@ body
 }
 
 #button{
-   font-size: 30px;
+   font-size: 25px;
    text-decoration: none;
    color: white;
    text-align: center;
-   border: 2px solid black;
+   border: 2px solid lightgray;
    display: inline-block;
    background-color: #3b3b3b95;
    margin-bottom: 50px;
@@ -52,7 +59,7 @@ body
    text-decoration: none;
    color: white;
    text-align: center;
-   border: 2px solid black;
+   border: 2px solid lightgray;
    display: inline-block;
    background-color: #3b3b3b95;
    border-radius: 40px;
@@ -66,7 +73,7 @@ body
 #logoId{
    width: 500px;
    height: 150px;
-   margin-bottom: 80px;
+   margin-bottom: 0px;
 }
 
 #logoSection{
@@ -125,15 +132,16 @@ body
    display: block;
    width: 230px;
    border-radius: 40px;
-   border: none;
-   outline: none; 
+   background-color: #3b3b3b95;
+   border: 2px solid lightgray;
+
 
  }
 
  #submit:hover, #login:hover, #forgotPass:hover
  {
    cursor: pointer;
-   opacity: 0.78;
+   opacity: 0.60;
  }
 
  #regForm :focus
@@ -159,10 +167,6 @@ body
    display: inline;
    margin-left: -25px;
  
- }
-
- .passwords_with_icons
- {
  }
 
  input
@@ -225,22 +229,21 @@ body
     padding: 35px 0;
  }
 
+ .loginForm a
+ {
+   text-decoration: none;;
+ }
+
  #login, #forgotPass{
    color: white;
-   background-color: black;
+   background-color: #3b3b3b95;
    padding: 5px 20px;
    display: block;
    width: 230px;
    margin-left:30px;
    border-radius: 40px;
-   border: none;
-   outline: none; 
- }
-
- #signUp{
-   border: none;
-   outline: none; 
-   border-radius: 40px;
+   border: 2px solid lightgray;
+   
  }
 
  .top
@@ -270,7 +273,9 @@ body
    margin: 0 20%;
    margin-right: 80px;
    color: white;
-   background-color: black;
+   border: 2px solid lightgray;
+   background-color: #3b3b3b95;
+   border-radius: 40px;
    padding: 5px 20px;
 }
 
