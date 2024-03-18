@@ -72,9 +72,7 @@
                     </div>
                 </div>
 
-                <div id = "displayResult">
-                    <p id = "result5">test</p>
-                </div>
+                
 
                 <div class="moduleClasses">
                     <p class="moduleLevel"> Level 6 </p>
@@ -127,19 +125,35 @@
                     <button class="calculateButton" id = "calculate"> Calculate </button>
                 </div>
 
-                <div id = "displayResult">
-                    <p id = "result6">test</p>
-                </div>
+                
                 <script src="../controller/JavaScript/PE2_calcLogic.js"></script>
                 <script>document.getElementById("calculate").onclick = calculateGrades;</script>
+
+                
+
+                <div id="resultSection">
+                    
+                    <p> Calculation Results: </p>
+
+                    <div>
+                        <p id="result5">Level 5 out of 20% = </p>
+                    </div>
+                    <div>
+                        <p id="result6">Level 6 out of 80% = </p>
+                    </div>
+                    <div>
+                        <p id="displayResult"></p>
+                    </div>
+                </div>
             </section>
             
             <section id="bottomSection">
                 <p class="bottomText"><input type="checkbox" name="final_year_planning"> Include final year planning</p>
-                <p class="bottomText"><input type="radio" name="class_type" value="first_class"> First class</p>
-                <p class="bottomText"><input type="radio" name="class_type" value="upper_second_class"> Upper Second class</p>
-                <p class="bottomText"><input type="radio" name="class_type" value="lower_second_class"> Lower Second class</p>
-                <p class="bottomText"><input type="radio" name="class_type" value="pass"> Pass</p>                
+                <p class="bottomText"><input type="radio" name="class_type" value="first_class" id = "first_class"> First class</p>
+                <p class="bottomText"><input type="radio" name="class_type" value="upper_second_class" id = "upper_second_class"> Upper Second class</p>
+                <p class="bottomText"><input type="radio" name="class_type" value="lower_second_class" id = "lower_second_class"> Lower Second class</p>
+                <p class="bottomText"><input type="radio" name="class_type" value="third_class" id = "third_class"> Third class</p>
+                <p class="bottomText"><input type="radio" name="class_type" value="pass" id = "pass"> Pass</p>                
             </section>
         <!--</form>-->
     </body>
