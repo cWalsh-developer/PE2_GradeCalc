@@ -126,8 +126,8 @@
                 </div>
 
                 
-                <script src="../controller/JavaScript/PE2_calcLogic.js"></script>
-                <script>document.getElementById("calculate").onclick = calculateGrades;</script>
+                
+                
 
                 
 
@@ -144,17 +144,25 @@
                     <div>
                         <p id="displayResult"></p>
                     </div>
+
+                    <p id = "test">TestPar</p>
                 </div>
             </section>
-            
+
             <section id="bottomSection">
                 <p class="bottomText"><input type="checkbox" name="final_year_planning"> Include final year planning</p>
                 <p class="bottomText"><input type="radio" name="class_type" value="first_class" id = "first_class"> First class</p>
                 <p class="bottomText"><input type="radio" name="class_type" value="upper_second_class" id = "upper_second_class"> Upper Second class</p>
                 <p class="bottomText"><input type="radio" name="class_type" value="lower_second_class" id = "lower_second_class"> Lower Second class</p>
                 <p class="bottomText"><input type="radio" name="class_type" value="third_class" id = "third_class"> Third class</p>
-                <p class="bottomText"><input type="radio" name="class_type" value="pass" id = "pass"> Pass</p>                
+                <p class="bottomText"><input type="radio" name="class_type" value="pass" id = "pass"> Pass</p>     
+                <p class="bottomText"><input type="submit" name = "class_type" value="Show Prediction" id = "predict"></p>
+                       
             </section>
+            <script src="../controller/JavaScript/PE2_calcLogic.js"></script>  
+            <script>document.getElementById("calculate").onclick = calculateGrades;</script> 
+            <script>document.getElementById("predict").onclick = calculatePrediction</script>
+
         <!--</form>-->
     </body>
 </html>
