@@ -111,14 +111,36 @@ function calculatePrediction()
     var third = 45;
     var pass = 40;
 
-    var totalAverage = finalL5.toFixed(2) + finalL6.toFixed(2);
+    //var totalAverage = finalL5.toFixed(2) + finalL6.toFixed(2);
 
     var firstClassRad = document.getElementById("first_class");
     var upperSecondClassRad = document.getElementById("upper_second_class");
     var lowerSecondClassRad = document.getElementById("lower_second_class");
     var thirdClassRad = document.getElementById("third_class");
     var passRad = document.getElementById("pass");
-}
+
+    if (firstClassRad.checked)
+    {
+      document.getElementById("test").innerHTML = "first selected";
+    }
+    else if(upperSecondClassRad.checked)
+    {
+      document.getElementById("test").innerHTML = "upperSecond selected";
+    }
+    else if(lowerSecondClassRad.checked)
+    {
+      document.getElementById("test").innerHTML = "lowerSecond selected";
+    }
+    else if(thirdClassRad.checked)
+    {
+      document.getElementById("test").innerHTML = "third selected";
+    }
+    else if(passRad.checked)
+    {
+      document.getElementById("test").innerHTML = "pass selected";
+    }
+}    
+
 
 
 
