@@ -589,6 +589,10 @@ body
    margin-bottom: 50px;
 }
 
+#predictions{
+   color:white;
+}
+
  /* Reset password page */
 
 #resetPasswordSection{
