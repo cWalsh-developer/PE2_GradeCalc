@@ -1,3 +1,14 @@
+window.onload = function() {
+  var accessibilityEnabled = sessionStorage.getItem('accessibility');
+  if (accessibilityEnabled === 'enabled') {
+      document.body.style.fontFamily = 'Comic Sans MS';
+      document.body.style.fontSize = '20px';
+  }
+};
+
+
+
+
 //logic for the calculator
 var markL5;
 var finalL5;
@@ -228,6 +239,25 @@ function calculatePrediction()
 }
     
 
+
+
+
+function toggleAccessibility() {
+  var accessibilityEnabled = sessionStorage.getItem('accessibility');
+
+  if (accessibilityEnabled === 'enabled') {
+
+      document.body.style.fontFamily = ''; 
+      document.body.style.fontSize = ''; 
+
+      sessionStorage.removeItem('accessibility');
+  } else {
+      document.body.style.fontFamily = 'Comic Sans MS';
+      document.body.style.fontSize = '18px';
+
+      sessionStorage.setItem('accessibility', 'enabled');
+  }
+}
 
 
 
