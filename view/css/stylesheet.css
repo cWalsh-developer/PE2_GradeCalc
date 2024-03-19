@@ -209,7 +209,7 @@ body
 
  }
 
- #submit:hover, #login:hover, #forgotPass:hover
+ #submit:hover, #login:hover, #forgotPass:hover, #button:hover, #more:hover, #signUp:hover, #moreSignUp:hover, #backButtonImg:hover, #forgotPassSubmit:hover
  {
    cursor: pointer;
    opacity: 0.60;
