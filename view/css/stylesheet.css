@@ -190,7 +190,7 @@ body
     flex-wrap: wrap;
     width: max-content;
     margin: 0 auto;
-    padding: 35px 0;
+    padding: 10px 0;
  }
 
  #fnameInput, #lnameInput, #emailInput, #passwordInput, #confirmPasswordInput, #confirmPasswordCheck, #emailInputCheck
