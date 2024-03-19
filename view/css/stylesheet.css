@@ -503,22 +503,44 @@ body
 }
 
 
- /* Student View */
+ /* Teacher View */
 
- #listSection{
-   
+#listSection{
+
    display: flex;
    text-align: center;
    justify-content: space-between;
-   
-   
- }
+
+
+}
+
+#studentListSection{
+   text-align: center;
+   margin-left: 400px;
+}
+
+
+#searchName{
+   margin: 20px;
+}
+
+#searchKUNumb{
+   margin: 20px;
+}
+
+#addStudentButton{
+   margin: 20px;
+   width: 200px;
+   height: 28px;
+   font-size: 20px;
+}
 
 #studentListDiv{
+   overflow: auto;
    width: 300px;
    background-color: #3b3b3b90;
    color: white;
-   margin-left: 400px;
+   padding: 10px;
    border-radius: 40px;
 }
 
@@ -526,11 +548,16 @@ body
    font-size: 30px;
 }
 
+#moduleListSection{
+   margin-right: 250px;
+}
+
 #moduleListDiv{
+   overflow: auto;
    width: 400px;
    color: white;
    background-color: #3b3b3b90;
-   margin-right: 250px;
+   padding: 10px;
    border-radius: 40px;
 }
 
