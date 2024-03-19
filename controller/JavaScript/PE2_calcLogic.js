@@ -111,35 +111,104 @@ function calculatePrediction()
     var third = 45;
     var pass = 40;
 
-    //var totalAverage = finalL5.toFixed(2) + finalL6.toFixed(2);
+    if(finalL5 == null)
+    {
+      alert("Please make sure you input your grades before asking for a prediction");
+    }
+    else
+    {
+      var totalAverage = parseFloat(finalL5.toFixed(2)) + parseFloat(finalL6.toFixed(2));
 
-    var firstClassRad = document.getElementById("first_class");
-    var upperSecondClassRad = document.getElementById("upper_second_class");
-    var lowerSecondClassRad = document.getElementById("lower_second_class");
-    var thirdClassRad = document.getElementById("third_class");
-    var passRad = document.getElementById("pass");
+      var firstClassRad = document.getElementById("first_class");
+      var upperSecondClassRad = document.getElementById("upper_second_class");
+      var lowerSecondClassRad = document.getElementById("lower_second_class");
+      var thirdClassRad = document.getElementById("third_class");
+      var passRad = document.getElementById("pass");
 
-    if (firstClassRad.checked)
-    {
-      document.getElementById("test").innerHTML = "first selected";
-    }
-    else if(upperSecondClassRad.checked)
-    {
-      document.getElementById("test").innerHTML = "upperSecond selected";
-    }
-    else if(lowerSecondClassRad.checked)
-    {
-      document.getElementById("test").innerHTML = "lowerSecond selected";
-    }
-    else if(thirdClassRad.checked)
-    {
-      document.getElementById("test").innerHTML = "third selected";
-    }
-    else if(passRad.checked)
-    {
-      document.getElementById("test").innerHTML = "pass selected";
-    }
-}    
+      if (firstClassRad.checked)
+      {
+        firstPrediction = parseFloat(firstClass) - parseFloat(totalAverage);
+ 
+        if (firstPrediction < 0)
+        {
+          document.getElementById("test").innerHTML = "Well Done! First class achieved, you are over by " + Math.abs(firstPrediction.toFixed(2)) + "%";
+        }
+        else
+        {
+          L5extra = parseFloat(firstPrediction) / 2 * 10;
+          L6extra = parseFloat(firstPrediction) / 8 * 10;
+          document.getElementById("test").innerHTML = "You have not yet achieved a first class, to do so you need an extra " + firstPrediction.toFixed(2) + "%" +
+                                                        " this would mean an extra " + L5extra.toFixed(2) + "% in level 5 or an extra " + L6extra.toFixed(2) + "% in level 6";
+        }
+        
+      }
+      else if(upperSecondClassRad.checked)
+      {
+        upperSecondPrediction = parseFloat(secondUpper) - parseFloat(totalAverage);
+
+        if (upperSecondPrediction < 0)
+        {
+          document.getElementById("test").innerHTML = "Well Done! Upper second class achieved, you are over by " + Math.abs(upperSecondPrediction.toFixed(2)) + "%";
+        }
+        else
+        {
+          L5extra = parseFloat(upperSecondPrediction) / 2 * 10;
+          L6extra = parseFloat(upperSecondPrediction) / 8 * 10;
+          document.getElementById("test").innerHTML = "You have not yet achieved an upper second class, to do so you need an extra " + upperSecondPrediction.toFixed(2) + "%" +
+                                                        " this would mean an extra " + L5extra.toFixed(2) + "% in level 5 or an extra " + L6extra.toFixed(2) + "% in level 6";
+        }
+      }
+      else if(lowerSecondClassRad.checked)
+      {
+        lowerSecondPrediction = parseFloat(secondLower) - parseFloat(totalAverage);
+
+        if (lowerSecondPrediction < 0)
+        {
+          document.getElementById("test").innerHTML = "Well Done! Lower second class achieved, you are over by " + Math.abs(lowerSecondPrediction.toFixed(2)) + "%";
+        }
+        else
+        {
+          L5extra = parseFloat(lowerSecondPrediction) / 2 * 10;
+          L6extra = parseFloat(lowerSecondPrediction) / 8 * 10;
+          document.getElementById("test").innerHTML = "You have not yet achieved a lower second class, to do so you need an extra " + lowerSecondPrediction.toFixed(2) + "%" +
+                                                        " this would mean an extra " + L5extra.toFixed(2) + "% in level 5 or an extra " + L6extra.toFixed(2) + "% in level 6";
+        }
+      }
+      else if(thirdClassRad.checked)
+      {
+        thirdPrediction = parseFloat(third) - parseFloat(totalAverage);
+
+        if (thirdPrediction < 0)
+        {
+          document.getElementById("test").innerHTML = "Well Done! Third class achieved, you are over by " + Math.abs(thirdPrediction.toFixed(2)) + "%";
+        }
+        else
+        {
+          L5extra = parseFloat(thirdPrediction) / 2 * 10;
+          L6extra = parseFloat(thirdPrediction) / 8 * 10;
+          document.getElementById("test").innerHTML = "You have not yet achieved a third class, to do so you need an extra " + thirdPrediction.toFixed(2) + "%" +
+                                                        " this would mean an extra " + L5extra.toFixed(2) + "% in level 5 or an extra " + L6extra.toFixed(2) + "% in level 6";
+        }
+      }
+      else if(passRad.checked)
+      {
+        passPrediction = parseFloat(pass) - parseFloat(totalAverage);
+
+        if (passPrediction < 0)
+        {
+          document.getElementById("test").innerHTML = "Well Done! Pass achieved, you are over by " + Math.abs(passPrediction.toFixed(2)) + "%";
+        }
+        else
+        {
+          L5extra = parseFloat(passPrediction) / 2 * 10;
+          L6extra = parseFloat(passPrediction) / 8 * 10;
+          document.getElementById("test").innerHTML = "You have not yet achieved a pass, to do so you need an extra " + passPrediction.toFixed(2) + "%" +
+                                                        " this would mean an extra " + L5extra.toFixed(2) + "% in level 5 or an extra " + L6extra.toFixed(2) + "% in level 6";
+        }
+      }
+  }    
+}
+    
 
 
 
