@@ -4,6 +4,8 @@ body
    background-size: cover;
   margin: 0px;
   padding: 0;
+  background-color: rgb(6, 0, 24); 
+  overflow-x: hidden;
 }
  
 /* home style */
