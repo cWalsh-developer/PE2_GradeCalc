@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
         <link rel="icon" type="image/x-icon" href="../view/css/android-chrome-192x192.png">
-
+        <script src="../controller/JavaScript/PE2_calcLogic.js"></script>
         <title>Grade calculation</title>
     </head>
 
@@ -18,7 +18,7 @@
                 <p id="studentTite"> Student </p>
             </div>
 
-            <a href="homePage_view.html">
+            <a href="login_view.html">
             <img  src="css/backbutton.png" id="backButtonImg">
             </a>
         </section>  
@@ -72,8 +72,6 @@
                     </div>
                 </div>
 
-                
-
                 <div class="moduleClasses">
                     <p class="moduleLevel"> Level 6 </p>
                     <div class="labels">
@@ -120,16 +118,10 @@
                     </div>
                 </div>
 
-
                 <div id="calculateDiv">
-                    <button class="calculateButton" id = "calculate"> Calculate </button>
+                    <button class="calculateButton" id = "calculate" onclick="calculateGrades()"> Calculate </button>
+                    <a href="analysis_view.html"><button class="calculateButton" id = "graph"> View Graphs... </button></a>
                 </div>
-
-                
-                
-                
-
-                
 
                 <div id="resultSection">
                     
@@ -145,24 +137,9 @@
                         <p id="displayResult"></p>
                     </div>
 
-                    <p id = "test">TestPar</p>
+                    <p id = "test"></p>
                 </div>
             </section>
-
-            <section id="bottomSection">
-                <p class="bottomText"><input type="checkbox" name="final_year_planning"> Include final year planning</p>
-                <p class="bottomText"><input type="radio" name="class_type" value="first_class" id = "first_class"> First class</p>
-                <p class="bottomText"><input type="radio" name="class_type" value="upper_second_class" id = "upper_second_class"> Upper Second class</p>
-                <p class="bottomText"><input type="radio" name="class_type" value="lower_second_class" id = "lower_second_class"> Lower Second class</p>
-                <p class="bottomText"><input type="radio" name="class_type" value="third_class" id = "third_class"> Third class</p>
-                <p class="bottomText"><input type="radio" name="class_type" value="pass" id = "pass"> Pass</p>     
-                <p class="bottomText"><input type="submit" name = "class_type" value="Show Prediction" id = "predict"></p>
-                       
-            </section>
-            <script src="../controller/JavaScript/PE2_calcLogic.js"></script>  
-            <script>document.getElementById("calculate").onclick = calculateGrades;</script> 
-            <script>document.getElementById("predict").onclick = calculatePrediction</script>
-
         <!--</form>-->
     </body>
 </html>

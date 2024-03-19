@@ -55,7 +55,7 @@ body
 }
 
 #more{
-   font-size: 30px;
+   font-size: 25px;
    text-decoration: none;
    color: white;
    text-align: center;
@@ -71,14 +71,86 @@ body
 }
 
 #logoId{
-   width: 500px;
-   height: 150px;
-   margin-bottom: 0px;
+   width: 400px;
+   height: 400px;
 }
 
 #logoSection{
-   margin-top: 50px;
    text-align: center;
+}
+
+/* findOutMore page */
+
+#moreSection{
+   text-align: center;
+   color: white;
+   margin-left: 100px;
+   margin-right: 100px;
+}
+
+#moreTitleText{
+   margin-top: 50px;
+   font-size: 50px;
+}
+
+#moreMotivationalText{
+   margin-top: 50px;
+   font-size: 30px;
+}
+
+#moreYappingText{
+   margin-top: 50px;
+   font-size: 20px;
+}
+
+
+
+
+#picSection{
+   text-align: center;
+   
+}
+
+#pic1{
+   margin: 20px;
+   width: 300px;
+   height: 200px;
+}
+#pic2{
+   margin: 20px;
+   width: 300px;
+   height: 200px;
+}
+#pic3{
+   margin: 20px;
+   width: 300px;
+   height: 200px;
+}
+
+#moreButtonSection{
+   text-align: center;
+   margin-top: 50px;
+}
+
+#moreSignUp{
+   color: white;
+   border: 2px solid lightgray;
+   background-color: #3b3b3b95;
+   border-radius: 40px;
+   padding: 5px 20px;
+}
+
+#moreRegisterButton{
+   color: white;
+   background-color: black;
+   padding: 5px 20px;
+   border-radius: 40px;
+   background-color: #3b3b3b95;
+   border: 2px solid lightgray;
+}
+
+#moreSignUp:hover{
+   cursor: pointer;
 }
 
 /* register page */
@@ -259,7 +331,7 @@ body
  #logoCbr
  {
    width: 270px;
-   height: 95px;
+   height: 270px;
  }
 
 .logo
@@ -289,6 +361,7 @@ body
    align-items: center;
    padding: 10px;
    margin-bottom: 50px;
+   height: 100px;
    
 }
 
@@ -305,8 +378,8 @@ body
 }
 
 #logoIdStudent{
-   width: 300px;
-   height: 100px;
+   width: 275px;
+   height: 275px;
 }
 
 #studentTite{
@@ -336,13 +409,23 @@ body
    margin-bottom: 50px;
 }
 
+#calculate{
+   margin-left: 160px;
+}
+
+#graph{
+   margin-left: 80px;
+}
+
 #gradeCalculator{
    margin-left: 300px;
    margin-right: 300px;
    border: 2px solid black;
    /*old grey colour background-color: #80808090; */
    background-color: #3b3b3b90;
+   margin-bottom: 50px;
 }
+
 
 #chooseYourCourse{
    color: white;
@@ -414,18 +497,6 @@ body
 }
 
 
-#bottomSection{
-   background-color: #3b3b3b90;
-   padding-top: 50px;
-   margin-left: 300px;
-   margin-right: 300px;
-   border: 2px solid black;
-   display: flex;
-   justify-content: center;
-   color: white;
-   padding-bottom: 50px;
-   margin-bottom: 50px;
-}
 
 .bottomText{
    margin: 20px;
@@ -473,4 +544,55 @@ body
    margin-bottom: 100px;
    font-size: 20px;
 
+}
+
+ /* Analysis page */
+
+#bottomSection{
+   margin-top: 500px;
+   background-color: #3b3b3b90;
+   padding-top: 50px;
+   margin-left: 300px;
+   margin-right: 300px;
+   border: 2px solid black;
+   display: flex;
+   justify-content: center;
+   color: white;
+   padding-bottom: 50px;
+   margin-bottom: 50px;
+}
+
+ /* Reset password page */
+
+#resetPasswordSection{
+   margin-top: 50px;
+   text-align: center;
+   color: white;
+   border: 2px solid black;
+   width: 600px;
+   height: 500px;
+   background-color: #3b3b3b90;
+   margin-left: auto;
+   margin-right: auto;
+
+
+}
+#forgotPassSubmit{
+   color: white;
+   background-color: #3b3b3b95;
+   padding: 5px 20px;
+   border-radius: 40px;
+   border: 2px solid lightgray;
+}
+
+#resetPassText{
+   margin-top: 0px;
+   font-size: 40px;
+   background-color: #00000080;
+   padding: 50px;
+
+}
+
+#resetYapText{
+   margin-top: 100px;
 }

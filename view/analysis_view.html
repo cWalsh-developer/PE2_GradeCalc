@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link rel="icon" type="image/x-icon" href="../view/css/android-chrome-192x192.png">
+
+        <title>Grade calculation</title>
+    </head>
+
+    <body id="studentViewBody">
+        
+        <section id="topBar">
+            <img src="css/cbrrand_logo.png" id="logoIdStudent"> 
+
+            <div id="topBarDiv">
+                <p id="studentTite"> Analysis </p>
+            </div>
+
+            <a href="student_view.html">
+            <img  src="css/backbutton.png" id="backButtonImg">
+            </a>
+        </section>  
+
+        <section id="bottomSection">
+            <p class="bottomText"><input type="checkbox" name="final_year_planning"> Include final year planning</p>
+            <p class="bottomText"><input type="radio" name="class_type" value="first_class" id = "first_class"> First class</p>
+            <p class="bottomText"><input type="radio" name="class_type" value="upper_second_class" id = "upper_second_class"> Upper Second class</p>
+            <p class="bottomText"><input type="radio" name="class_type" value="lower_second_class" id = "lower_second_class"> Lower Second class</p>
+            <p class="bottomText"><input type="radio" name="class_type" value="third_class" id = "third_class"> Third class</p>
+            <p class="bottomText"><input type="radio" name="class_type" value="pass" id = "pass"> Pass</p>     
+            <p class="bottomText"><input type="submit" name = "class_type" value="Show Prediction" id = "predict"></p>
+                   
+        </section>
+        <script src="../controller/JavaScript/PE2_calcLogic.js"></script>  
+        <script>document.getElementById("calculate").onclick = calculateGrades;</script> 
+        <script>document.getElementById("predict").onclick = calculatePrediction</script>
+    </body>
+</html>
