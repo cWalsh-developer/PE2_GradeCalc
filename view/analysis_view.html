@@ -4,9 +4,8 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
         <link rel="icon" type="image/x-icon" href="../view/css/android-chrome-192x192.png">
-        <script src="../controller/JavaScript/PE2_calcLogic.js"></script>
-
-        <title>Grade calculation</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <title>Analysis Chart</title>
     </head>
 
     <body id="studentViewBody">
@@ -24,10 +23,13 @@
             <img  src="css/backbutton.png" id="backButtonImg">
             </a>
         </section>  
-
-        <section id = "predictions">
-            <p id = "predict">your chosen prediction will be displayed here</p>
-        </section>
+        <div class="center_chart">
+            <section id = "predictions">
+                <canvas id="myChart">
+    
+                </canvas>
+            </section>
+        </div>
 
         <section id="bottomSection">
             <p class="bottomText"><input type="checkbox" name="final_year_planning"> Include final year planning</p>
@@ -39,5 +41,75 @@
                    
         </section>
         <script src="../controller/JavaScript/PE2_calcLogic.js"></script>  
+        <script>
+            let labels = ['Level 5', 'Level 6'];
+            let calculationData = [parseInt(sessionStorage.getItem("finalL5")), parseInt(sessionStorage.getItem("finalL6"))];
+            const data = {
+                labels: labels,
+                datasets: [{
+                    data: calculationData,
+                    backgroundColor: ['rgb(5, 91, 240)', 'rgb(255, 128, 48)']
+                }]
+            };
+            
+            const config = {
+                type:'bar',
+                data: data,
+                options:
+                {
+                    plugins: {
+                        legend: {
+                            display: false,
+                        },
+                        title: 
+                        {
+                            display: true,
+                            text: 'Level 5 & 6 Grade Calculations',
+                            color: 'white',
+                            font:{
+                                size: 18,
+                        }
+                    }
+                },
+                scales: 
+                {
+                    x: {
+                        ticks: 
+                        {
+                            font: {
+                                size: 20
+                            },
+                            color: "white",
+                        },
+                        grid: 
+                        {
+                            color: 'white',
+                            padding: 20
+                        }
+                    },
+                    y: {
+                        ticks: 
+                        {
+                            font: {
+                                size: 20
+                            },
+                            color: "white",
+
+                        },
+                        grid: 
+                        {
+                            color: 'white'
+                        }
+                    }
+                }
+            }
+
+            };
+
+            const chart = new Chart(document.getElementById("myChart"),
+            config
+            );
+
+        </script>
     </body>
 </html>

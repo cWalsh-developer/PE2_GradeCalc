@@ -1,4 +1,4 @@
-/* Creating a function to validate the registration form inputs*/
+/* Creating a function for validating the registration form inputs*/
 
 function validateRegistrationForm() {
   var password = document.forms["regForm"]["password"].value;
