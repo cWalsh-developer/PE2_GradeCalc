@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
         <link rel="icon" type="image/x-icon" href="../view/css/android-chrome-192x192.png">
         <script src="../controller/JavaScript/PE2_calcLogic.js"></script>
+        <script src="../controller/JavaScript/PE2_Calc_JavaScript.js"></script>
     </head>
     <body>
         <div class = "top">
@@ -29,20 +30,15 @@
 
             <div class = "loginForm">
 
-           <!-- <form>  Temporarily stopped form and added anchor link to get the log in working -->
+                <form method="post" id="loginForm" onsubmit="return login()">  
                     <label for = "username"><img src="css/student img.png" id="userImg"></img></label>
                     <input type = "text" id = "username" name = "username"><br><br>
                     <label for = "password"><img src="css/passwordIcon.png" id="passImg"></img></label>
                     <input type = "password" id = "password" name = "password"><br><br><br><br>
 
-                    <a href="student_view.html">
                     <input type = "submit" id = "login" value = "Log In" name = "login"><br>
-                    </a>
-
-                    <a href="forgotPassword_view.html"><input type = "submit" id = "forgotPass" value = "Forgot your password?" name = "forgotPass"><br><br></a>
-
-           <!-- </form>--> 
-
+                </form> 
+                <a href="forgotPassword_view.html"><input type = "submit" id = "forgotPass" value = "Forgot your password?" name = "forgotPass"><br><br></a>
             </div>
         </div>
     </body>

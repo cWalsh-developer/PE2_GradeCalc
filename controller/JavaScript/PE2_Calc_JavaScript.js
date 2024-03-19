@@ -1,3 +1,11 @@
+window.onload = function() {
+  var loginButton = document.getElementById("login");
+  if (loginButton) {
+      loginButton.onclick = login;
+  }
+};
+
+
 /* Creating a function for validating the registration form inputs*/
 
 function validateRegistrationForm() {
@@ -76,3 +84,23 @@ document.getElementById("lname").onclick = vanishErrorsOnClick;
 document.getElementById("email").onclick = vanishErrorsOnClick;
 document.getElementById("password").onclick = vanishErrorsOnClick;
 document.getElementById("passwordConfirm").onclick = vanishErrorsOnClick;
+
+
+
+
+function login() {
+  var email = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
+
+  if (email == 'teacher' && password == 'testing') {
+    window.location.href = 'teacher_view.html';
+    return false;
+  } else if (email != '' && password != '') {
+    window.location.href = 'student_view.html';
+    return false;
+  }
+  else{
+    window.location.href = 'login_view.html';
+    return false;
+  }
+}
