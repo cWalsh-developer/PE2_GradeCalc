@@ -517,6 +517,10 @@ body
 
 }
 
+.teacherViewModuleTitle{
+   font-size: 25px;
+}
+
 #studentListSection{
    text-align: center;
    margin-left: 400px;
