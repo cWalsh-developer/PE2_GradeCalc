@@ -10,20 +10,21 @@ body
  
 /* home style */
 
-
-
-#visionStatement{
-   margin: 0 20px;
-   margin-bottom: 60px;
-   text-align: center;
-   color: white;
-   font-family: sans-serif;
-   font-size: 30px;
+#accessibilityContainer{
+   display: flex;
 }
 
-#visionStatementText
-{
-   margin-top: 0;
+#accessibilityImg{
+   margin-left: auto;
+   margin-right: 50px;
+   margin-top: 50px;
+   height: 65px;
+   width: 65px;
+}
+
+#accessibilityImg:hover{
+   cursor: pointer;
+   opacity: 0.6;
 }
 
 #text{
@@ -74,7 +75,7 @@ body
 
 #logoId{
    width: 400px;
-   height: 400px;
+   height: 300px;
 }
 
 #logoSection{
