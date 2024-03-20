@@ -1,6 +1,6 @@
 window.onload = function() {
   var accessibilityEnabled = sessionStorage.getItem('accessibility');
-  if (accessibilityEnabled === 'enabled') {
+  if (accessibilityEnabled == 'enabled') {
       document.body.style.fontFamily = 'Comic Sans MS';
       document.body.style.fontSize = '20px';
   }
@@ -258,6 +258,3 @@ function toggleAccessibility() {
       sessionStorage.setItem('accessibility', 'enabled');
   }
 }
-
-
-

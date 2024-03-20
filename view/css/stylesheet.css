@@ -506,16 +506,44 @@ body
    margin: 20px;
 }
 
+#bottomSection{
+   background-color: #3b3b3b90;
+   margin-left: auto;
+   margin-right: auto;
+   border: 2px solid black;
+   display: flex;
+   justify-content: center;
+   color: white;
+   margin-bottom: 50px;
+   width: 800px;
+}
 
- /* Teacher View */
+
+#arrayOfIcons{
+   display: flex;
+   justify-content: center;
+   margin: 10px;
+}
+
+#settingsIcon{
+   margin: 13px;
+}
+#settingsWithPageIcon{
+   margin: 13px;
+}
+#shareIcon{
+   margin: 13px;
+}
+#chatIcon{
+   margin: 13px;
+}
+
+/* Teacher View */
 
 #listSection{
-
    display: flex;
    text-align: center;
    justify-content: space-between;
-
-
 }
 
 .teacherViewModuleTitle{
@@ -526,7 +554,6 @@ body
    text-align: center;
    margin-left: 400px;
 }
-
 
 #searchName{
    margin: 20px;
@@ -582,20 +609,6 @@ body
 }
 
  /* Analysis page */
-
-#bottomSection{
-   margin-top: 500px;
-   background-color: #3b3b3b90;
-   padding-top: 50px;
-   margin-left: 300px;
-   margin-right: 300px;
-   border: 2px solid black;
-   display: flex;
-   justify-content: center;
-   color: white;
-   padding-bottom: 50px;
-   margin-bottom: 50px;
-}
 
 .center_chart
 {

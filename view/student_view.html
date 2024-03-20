@@ -173,7 +173,25 @@
 
                     <p id = "test"></p>
                 </div>
+
+                <section id="bottomSection">
+                    <p class="bottomText"><input type="checkbox" name="final_year_planning"> Include final year planning</p>
+                    <p class="bottomText"><input type="radio" name="class_type" value="first_class" id = "first_class" onclick="calculatePrediction();"> First class</p>
+                    <p class="bottomText"><input type="radio" name="class_type" value="upper_second_class" id = "upper_second_class" onclick="calculatePrediction();"> Upper Second class</p>
+                    <p class="bottomText"><input type="radio" name="class_type" value="lower_second_class" id = "lower_second_class" onclick="calculatePrediction();"> Lower Second class</p>
+                    <p class="bottomText"><input type="radio" name="class_type" value="third_class" id = "third_class" onclick="calculatePrediction();"> Third class</p>
+                    <p class="bottomText"><input type="radio" name="class_type" value="pass" id = "pass" onclick="calculatePrediction();"> Pass</p>             
+                </section>
+
+                <section id="arrayOfIcons">
+                    <img src="css/settingsIcon.png" id="settingsIcon">
+                    <img src="css/settingsWithPageIcon.png" id="settingsWithPageIcon">
+                    <img src="css/shareIcon.png" id="shareIcon">
+                    <img src="css/chatIcon.png" id="chatIcon">
+                </section>
             </section>
+
+            
         <!--</form>-->
     </body>
 </html>
