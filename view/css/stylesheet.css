@@ -525,18 +525,14 @@ body
    margin: 10px;
 }
 
-#settingsIcon{
+#settingsIcon, #settingsWithPageIcon, #shareIcon, #chatIcon{
    margin: 13px;
 }
-#settingsWithPageIcon{
-   margin: 13px;
+
+#settingsIcon:hover, #settingsWithPageIcon:hover, #shareIcon:hover, #chatIcon:hover{
+   cursor: pointer;
 }
-#shareIcon{
-   margin: 13px;
-}
-#chatIcon{
-   margin: 13px;
-}
+
 
 /* Teacher View */
 
