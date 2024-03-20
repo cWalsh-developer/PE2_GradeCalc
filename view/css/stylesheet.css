@@ -444,8 +444,6 @@ body
    color: white;
 }
 
-
-
 .moduleClasses
 {  
    text-align: center;
@@ -500,7 +498,9 @@ body
    margin: 10px;
 }
 
-
+#predict{
+   margin-top: 50px;
+}
 
 .bottomText{
    margin: 20px;
