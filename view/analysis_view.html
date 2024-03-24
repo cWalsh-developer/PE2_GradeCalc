@@ -7,30 +7,30 @@
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <title>Analysis Chart</title>
     </head>
-
+    
     <body id="studentViewBody">
-        
+        <noscript>JavaScript Has Been Disabled! You Must Enable JavaScript to Use This Application</noscript>
         <section id="topBar">
             <a href="homePage_view.html">
-            <img src="css/cbrrand_logo.png" id="logoIdStudent"> 
+                <img src="css/cbrrand_logo.png" id="logoIdStudent"> 
             </a>
-
+            
             <div id="topBarDiv">
                 <p id="studentTite"> Analysis </p>
             </div>
-
+            
             <a href="student_view.html">
-            <img  src="css/backbutton.png" id="backButtonImg">
+                <img  src="css/backbutton.png" id="backButtonImg">
             </a>
         </section>  
         <div class="center_chart">
             <section id = "predictions">
                 <canvas id="myChart">
-    
+                    
                 </canvas>
             </section>
         </div>
-
+        
         <section id="arrayOfIcons">
             <img src="css/settingsIcon.png" id="settingsIcon">
             <img src="css/settingsWithPageIcon.png" id="settingsWithPageIcon">
@@ -92,7 +92,7 @@
                                 size: 20
                             },
                             color: "white",
-
+                            
                         },
                         grid: 
                         {
@@ -103,7 +103,7 @@
             }
 
             };
-
+            
             const chart = new Chart(document.getElementById("myChart"),
             config
             );
