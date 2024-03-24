@@ -114,7 +114,9 @@ function calculateGrades()
   {
     markL6 = (markL6M4 + 2 * markL6M1 + 2 * markL6M2 + 2 * markL6M3) / 7 //this gets the average, only 20% of this mark goes towards the final grade
   }
-
+  else{
+    markL6 = (markL6M1 + 2 * markL6M2 + 2 * markL6M3 + 2 * markL6M4) / 7
+  }
   finalL6 = (80 * markL6) / 100;
   document.getElementById("result6").innerHTML = finalL6.toFixed(2); //insert the id to replace here, to fixed rounds to 2 d.p
 
